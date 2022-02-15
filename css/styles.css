@@ -52,6 +52,7 @@
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+    /* text-align: center; */
 }
 
 .section, no-padding {
