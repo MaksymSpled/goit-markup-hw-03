@@ -31,6 +31,7 @@
     --portfolio-accent-text-color: #ffffff;
     --main-font-family: Roboto, sans-serif;
     --logo-font-family: Raleway, sans-serif;
+    --border-line-color: #ECECEC;
 }  
 
 .list {
@@ -80,7 +81,8 @@
 .main-nav {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;;
+    border-bottom: 1px solid;
+    border-bottom-color: var(--border-line-color);
 }
 
 .navigation {
@@ -382,6 +384,8 @@
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
+    border-bottom: 1px solid;
+    border-bottom-color: var(--border-line-color);
     /* width: 370px;*/
 }
 
@@ -399,7 +403,6 @@
 
 .example-description {
     margin: 20px 24px;
-
 }
 
 .example-item {
