@@ -194,12 +194,24 @@
     display: flex;
 }
 
-.peculiarities-list> .peculiarities-list-link + .peculiarities-list-link {
+.peculiarities-list > .peculiarities-list-link + .peculiarities-list-link {
     margin-left: 30px;
 }
 
 .peculiarities-list> .peculiarities-list-link {
     width: 270px;
+}
+
+.products-list {
+    display: flex;
+}
+
+.products-list > .products-link + .products-link {
+    margin-left: 30px;
+}
+
+.product-pict {
+    display: block;
 }
 
 .head-description {
@@ -211,14 +223,6 @@
     
     color: var(--main-text-color);
     margin-bottom: 50px;
-}
-
-.products-link {
-    display: flex;
-}
-
-.products> .products-link + .produkts-link {
-    margin-left: 30px;
 }
 
 .item {
@@ -282,7 +286,7 @@
 }
 
 .footer-section {
-    padding-top: 90px;
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 
@@ -290,8 +294,13 @@
     color: var(--footer-logo-color);
 }
 
-.contact-list {
-    margin-bottom: 20px;
+.footer-adress {
+    padding-top: 20px;
+}
+
+
+.contact-list > .contact-list-item + .contact-list-item {
+    padding-top: 9px;
 }
 
 .contact-list-location {
@@ -326,11 +335,12 @@
 
 /* портфолио */
 
-.portfolio-nav {
-    display: flex;
+.portfolio-nav-link {
+    display: flex;    
 }
 
-.portfolio-nav> .portfolio-nav-list + .portfolio-nav-list {
+
+.portfolio-nav-link > .portfolio-nav-list + .portfolio-nav-list {
     margin-left: 8px;
 }
 
@@ -345,6 +355,8 @@
     color: var(--main-text-color);
     background-color: var(--portfolio-btn-bg-color);
 }
+
+
 
 .portfolio-nav-btn:hover,
 .portfolio-nav-btn:focus {
@@ -366,20 +378,31 @@
 }
 
 .flex-elements {
-    width: 370px;
+    width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
+    /* width: 370px;*/
 }
 
 .flex-elements:nth-child(3n)  {
     margin-right: 0px;
 }
 
-.flex-elements:nth-child(-n+3) {
+.flex-elements:nth-last-child(-n + 3) {
     margin-bottom: 0px;
 }
 
+.example-picture {
+    display: block;
+}
+
+.example-description {
+    margin: 20px 24px;
+
+}
+
 .example-item {
+    padding-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
