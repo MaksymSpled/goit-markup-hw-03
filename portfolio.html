@@ -15,7 +15,7 @@
 
     <!--хедер портфолио-->
 
-    <header>
+    <header class="header">
         <div class="container main-nav">
             <nav class="navigation">
                 <a class="logo link" href="/">
@@ -36,32 +36,19 @@
 
     <!--порфолио навигация-->
 
-    <main>
-        <div class="section container">
-            <nav>
-                <ul class="portfolio-nav list">
-                    <div class="portfolio-nav-link">
-                        <li class="portfolio-nav-list">
-                            <a  class="link portfolio-nav-btn" href="" >Все</a>
-                        </li>
-                        <li class="portfolio-nav-list">
-                            <a  class="link portfolio-nav-btn" href="" >Веб-сайты</a>
-                        </li>
-                        <li class="portfolio-nav-list">
-                            <a  class="link portfolio-nav-btn" href="" >Приложения</a></li>
-                        <li class="portfolio-nav-list">
-                            <a  class="link portfolio-nav-btn" href="" >Дизайн</a>
-                        </li>
-                        <li class="portfolio-nav-list">
-                            <a  class="link portfolio-nav-btn" href="" >Маркетинг</a>
-                        </li>
-                    </div>
-                </ul>
-            </nav>
+    <main class=" portfolio-container">
+        <section class="section">
+            <div class="portfolio-menu">
+                <button class="portfolio-menu-btn" type="button">Все</button>
+                <button class="portfolio-menu-btn" type="button">Веб-сайты</button>
+                <button class="portfolio-menu-btn" type="button">Приложения</button>
+                <button class="portfolio-menu-btn" type="button">Дизайн</button>
+                <button class="portfolio-menu-btn" type="button">Маркетинг</button>
+            </div>
     
             <!--портфолио примеры работ-->
     
-            <section class="example-container">
+            <div class="example">
                 <h2 hidden>примеры наших работ</h2>
                 <ul  class="flex-container list">
                     <li class="flex-elements">
@@ -128,27 +115,27 @@
                         </div>
                     </li>
                 </ul>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
 
     <!--портфолио футер-->
 
     <footer class="footer">
-        <div class="container footer-section">
+        <section class="container">
             <h2 hidden>Контактная инофрмация</h2>
             <a class="logo link" href="">
-            Web<span class="footer-logo">Studio</span>
+                Web<span class="footer-logo">Studio</span>
             </a>
             <div class="footer-adress">
                 <address class="about-contact">
                     <ul class="contact-list list">
                         <li class="contact-list-item">
                             <a class="contact-list-location link" 
-                            href="https://goo.gl/maps/B2JfurvAVLo2SMsa9"
-                            target="_blank"
-                            rel="noopener noreferer">
-                            г. Киев, пр-т Леси Украинки, 26
+                        href="https://goo.gl/maps/B2JfurvAVLo2SMsa9"
+                        target="_blank"
+                        rel="noopener noreferer">
+                        г. Киев, пр-т Леси Украинки, 26
                             </a>
                         </li>
                         <li class="contact-list-item">
@@ -160,7 +147,7 @@
                     </ul>
                 </address>
             </div>
-        </div>
-    </footer>   
+        </section>
+    </footer>    
 </body>
 </html>
